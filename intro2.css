@@ -1,0 +1,64 @@
+#login{
+    background-color: aqua;
+    display :flex;
+    align-items: center;
+    gap: 10px;
+}
+#LButton{
+    display: flex;
+    text-align:right;
+    margin-left:auto;
+}
+#sbar{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;            
+    padding: 10px 40px;
+}
+#logo{
+    margin-right: px;
+    display: block;
+    height: 50px;
+}
+#Home{
+    margin-top: 10px;
+}
+
+#body_back {
+    background-image: linear-gradient(rgba(100, 50, 98, 0.65), rgba(9, 80, 156, 0.75)) ,url("banner-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;       
+  background-position: center;   
+  
+  width: 100%;
+  height: calc(100vh - 110px);  
+  opacity: 0.8;
+  border-radius: 10px;
+  
+}
+#heading{
+    color: white;
+    position: relative;
+    top: 100px; 
+    left:10px;
+    display: flex;
+    
+}
+#button3{
+
+    text-align: center;
+    padding: 10px;
+    border: 10px solid rgb(255, 255, 255);
+    
+    color: black;
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    box-shadow: 0px 0px 10px rgb(255, 254, 254);
+    position: relative;
+    left:250px;
+    display:grid;
+    
+
+}
+
+

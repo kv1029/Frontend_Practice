@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0%;
+        }
+
+        header {
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: bisque;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        #head {
+            display: flex;
+            font-size: large;
+            gap: 20px;
+
+
+        }
+
+        #head a {
+            font-weight: bold;
+        }
+
+        #headend {
+            display: flex;
+            gap: 5px;
+            position: absolute;
+            right: 20px;
+
+        }
+
+        button {
+            height: 35px;
+            width: 80px;
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .down {
+            display: flex;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        #sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            background-color: black;
+            width: 30%;
+            height: 87vh;
+            position: fixed;
+            top: 100px;
+            left: 0;
+
+        }
+
+        #sidebar a {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            left: 20px;
+            gap: 30px;
+            width: fit-content;
+
+        }
+
+        #content {
+
+            background-color: aquamarine;
+            width: 90%;
+            height: 90%;
+            margin-left: 30%;
+            margin-top: 100px;
+             overflow-y: auto;
+        }
+        #same{
+            margin: auto;
+            height: 50vh;
+            background-color: white;
+            border-radius: 20px;
+            width: 67vw;
+            
+        }
+        #same h1 {
+            padding-top: 20px;
+            
+             margin-left: 20px;
+            
+        }
+        #same p {
+            
+            margin-left: 20px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id=""></div>
+        <div id="head">
+            <a href="#about" style="color: black;text-decoration: none;">About</a>
+            <a href="#features" style="color: black;text-decoration: none; ">Features</a>
+            <a href="#cta" style="color: black;text-decoration: none; ">CTA</a>
+            <a href="#contact" style="color: black;text-decoration: none; ">Contact</a>
+        </div>
+        <div id="headend">
+            <button>Login</button>
+            <button>Register</button>
+        </div>
+    </header>
+    <section class="down">
+        <div id="sidebar">
+            <h1 style="color: white; position: relative ;left: 20px;">SideBar Menu</h1>
+            <a href="#about">About</a>
+            <a href="#features">Features</a>
+            <a href="#call">Call To Action</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div id="content">
+            <div id="same">
+                <h1>About us</h1>
+                <p>Welcome to our website. This section provides information about our organization and its objectives.</p>
+            </div>
+            <div id="same">
+                <h1>Our Features</h1>
+                <p>Explore the different features and services available on our platform..</p>
+            </div>
+            <div id="same">
+                <h1>Call to Action</h1>
+                <p>Get started today and explore everything our platform has to offer.</p>
+            </div>
+            <div id="same">
+                <h1>Contact Us</h1>
+                <p>Reach out to us for more information, support, or business inquiries.</p>
+            </div>
+            
+        </div>
+
+    </section>
+</body>
+
+</html>

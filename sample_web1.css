@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+}
+
+#head{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    position:relative;
+    background-color: rgb(5, 123, 64);
+
+}
+#navigation{
+    
+    
+    position:relative;
+    top:35px;
+}
+
+#nav2{
+    position:relative;
+    top:35px;
+}
+#headValues{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 15px;
+    font-weight: 1000;
+}
+#button1{
+    background-color: rgb(5, 123, 64);
+    color: aquamarine;
+}
+
+#line{
+    background-color: rgb(5, 123, 64);
+    position:relative;
+    margin:0 auto;
+    padding:10px,0;
+    text-align: center;
+    height: 500px;
+    width: 1390px;
+    left:5px;
+    
+}
+#est{
+    color: white;
+    font-size: 25px;
+    font-weight: 200;position: relative;
+    top:30px;
+    
+}
+#sec{
+    display: grid;
+}

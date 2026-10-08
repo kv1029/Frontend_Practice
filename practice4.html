@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0%;
+        }
+
+        header {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: chartreuse;
+        }
+
+        div {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: black;
+            left: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            cursor: pointer;
+            top: 15px;
+
+
+
+        }
+
+        span {
+            position: static;
+            height: 5%;
+            width: 80%;
+            background-color: white;
+            gap: 20px;
+
+
+
+        }
+
+        aside {
+            height: 89.5vh;
+            width: 20%;
+            background-color: rgb(223, 17, 62);
+            transition: transform ease-in 5s;
+        }
+        #sidebar{
+            display: none;
+        }
+        #sidebar:active {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="#sidebar">
+            <div>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </a>
+        <h1>This is Header</h1>
+    </header>
+    <aside id="sidebar">
+    </aside>
+    <ol>
+        <li>fvkfv</li>
+        <li>fvkfv</li>
+        <li>fvkfv</li>
+        <li>fvkfv</li>
+    </ol>
+</body>
+
+</html>

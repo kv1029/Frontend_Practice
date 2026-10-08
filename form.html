@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form HTML</title>
+    <link rel="stylesheet" href="./intro.css"/>
+</head>
+<body style="background-color:rgb(0, 0, 0);color: aliceblue;">
+    <h1 id="heading">Student Registration</h1>
+    <br><br>
+    <form>
+        <fieldset id="pi">
+            <legend style="text-align: center;">Personal Information</legend>
+            
+
+            <label for="fullname" id ="label" style="text-align: center;">Full Name :</label><br>
+            <input  type="text" id="input" placeholder="Enter your full Name" required/>
+            <br><br>
+            <label for="Email" id ="label">Email :</label><br>
+            <input type="Email" id="input" name="Email" placeholder="Enter Email" required/>
+            <br><br>
+            <label for="Password" id ="label">Password :</label><br>
+            <input type="Password" id="input"  name ="Password" placeholder="Enter Password" required/>
+            <br><br>
+            <label for="phone" id ="label">Phone Number :</label><br>
+            <input type="tel" id="input" name="phone" placeholder="Enter the phone Number" required/>
+            <br><br>
+            <label for="DOB" id ="label">Date of Birth :</label><br>
+            <input type="date" id="input" name="DOB" required/>
+            <br><br>
+            <label for="Time" id ="label">Time :</label><br>
+            <input type="Time" id="input" name="Time" required/>
+            <br><br>
+            <p>Gender :</p>
+            <input type="radio" id="male" name="gender" />
+            <label for="male">Male</label><br>
+            <input type="radio"  name="gender"/>
+            <label for="Female" >Female</label><br>
+            <input type="radio" id="Other" name="gender"/>
+            <label for="Other" >Other</label><br>
+
+        </fieldset>
+        <br>
+        <fieldset id ="pi2">
+            <legend style="text-align: center;">Academic Information</legend>
+
+
+            <label for="course">Select course</label>
+            <select id="course" name="course">
+                <option value="">--Select course--</option>
+                <option value="bca">BCA</option>
+                <option value="btech">Btech</option>
+                <option value="mca">MCA</option>
+                <option value="aiml">AI-ML</option>
+                <option value="polytechnic">Polytechnic</option>
+            </select><br/><br/>
+            <label for="programming">Known Programming</label>
+            <select id="programming" name="programming" multiple size="5" required>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="js">JS</option>
+                <option value="tailwind">TailWind</option>
+                <option value="sql">SQL</option>
+                <option value="nodejs">NodeJs</option>
+            </select><br/><br/>
+            <label for="age">Age :</label>
+            <input type="number" id="age" name="age" required/>
+            <br/><br/>
+            <label for="skillLevel" >Programming Skill Level :</label>
+            <input type="range" id="skillLevel" name="skillLevel" min="0" max="100" required/><br/><br/>
+            <label for="city">City :</label>
+            <input type="text" list="cities" id="city" name="city"/>
+            <datalist id="cities">
+                <option value="Delhi" >
+                <option value="Mumbai" >
+                <option value="Mathura" >
+                <option value="Kheri" >
+                <option value="Agra" >
+                <option value="Noida">
+                <option value="SPN" >
+            </datalist>
+        </fieldset>
+        
+    </form>
+</body>
+</html>

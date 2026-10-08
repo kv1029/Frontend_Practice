@@ -1,0 +1,47 @@
+body{
+    margin:0% ;
+}
+
+.heading{
+    display:flex ;
+    justify-content: space-around;
+    align-items: center;
+}
+#skill{
+    display: flex;
+    font-size: 25px;
+    color: rgb(7, 7, 112);
+    align-items: center;
+    gap: 5px;
+}
+#centre{
+    display: flex;
+    gap:20px;
+    align-items: center;
+    
+}
+a{
+    color: rgb(99, 99, 181);
+    text-decoration: none;
+}
+#button{
+    height: 35px;
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.back{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(179, 179, 224);
+    align-items: center;
+    
+}
+#image{
+    height: 60px;
+    width: 60px;
+    align-items: center;
+
+    
+}

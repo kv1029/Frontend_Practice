@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#section2 {
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+#header {
+    width: 100%;
+    height: 65px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 10%;
+    background-color: rgb(6, 6, 40);
+}
+
+
+#section {
+    max-width: 1300px;
+    margin: 0 auto;
+
+    padding: 160px  40px;
+}
+
+
+#title h1 {
+    color: rgb(253, 253, 253);
+}
+
+
+
+#nav {
+    display: flex;
+    gap: 10px;
+}
+a {
+  text-decoration: none;
+}
+#body1 {
+  min-height: 100vh;
+  background: linear-gradient(#181549, #061e3a,rgb(23, 5, 43));
+}
+
+
+#nv {
+    color: white;
+}
+
+
+#world {
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+#world p {
+    color: white;
+}
+
+#Main {
+    color: white;
+    font-size: 42px;
+}
+
+
+
+#content {
+    color: white;
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+
+
+#buttons {
+    padding: 12px 18px;
+    border-radius: 10px;
+}
+#NextHead{
+    padding: 10px 10px ;
+    margin: auto;
+    text-align: center;
+    
+}
+#body2 {
+  min-height: 100vh;
+  background-color: white;
+  
+}
+#mainHead{
+    display: flex;
+    justify-content:space-between ;
+}
+#alag{
+
+    display: block;
+    padding: 50px;
+    border-radius: 10px;
+    border-left: 10px solid blue;
+    background-color: #b3b1d6;
+    width: 100%;
+    max-width: 600px;
+}
+#head2 {
+    
+    padding: 50px;
+    max-width: 700px;
+}
+#head4{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+}
+#para{
+    font-size: 20px;
+    line-height: 50px;
+}
+#mainHead{
+    
+    align-items: center;
+}
+#eco{
+    background-color: #181549;
+    
+    text-align: center;
+    color: white;
+}
+#card{
+    border: 0px solid black;
+    padding: 20px;
+    background-color: #1a165f;
+    width: 200px;
+    
+
+    
+}

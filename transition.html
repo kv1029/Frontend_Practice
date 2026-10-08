@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        main{
+            width: 100vh;
+            height: 500px;
+            text-align:center;
+
+        }
+        h1{
+            /* transform: translate(100px,100px) rotate(720deg);animation */
+            
+            /* transform: skew(360deg); */
+            /* transform: translate(-20px,20px); */
+            transition: transform 3s  ease-in-out;
+            transition-property: transform;
+            transition-duration: 3s;
+            transition-timing-function: ease;
+
+        }
+        h1:hover{
+            transform: rotate(360deg);
+        }
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+        @keyframes cardup{
+            0%{
+                background-color: RED;
+                transform: translateX(-20px);
+                opacity: 0;
+            }
+            25%{
+                background-color: RED;
+                transform: translateX(-15px);
+                opacity: 0.25;
+            }
+            50%{
+                background-color: RED;
+                transform: translateX(-10px);
+                opacity: 0.50;
+            }
+            75%{
+                background-color: RED;
+                transform: translateX(-15px);
+                opacity: 0.75;
+            }
+            100%{
+                background-color: RED;
+                transform: translateX(-15px);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Your Name</h1>
+        <p>Anything that you like of youself</p>
+    </main>
+    <div id="cardup">
+
+    </div>
+</body>
+</html>
