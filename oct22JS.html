@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Document</title>
+        
+    </head>
+    <body>
+    </body>
+    <script>
+        // 1. ARRAY METHODS
+        //Arrays store multiple values in a single variable.
+        // can store elements of both same and different data types.
+        // Elements can be from primitive or non-primitive datatype.
+        // var array = ['ele1', 'ele2'];
+        // const obj = {
+        //     key1: "value1", key2: "value1", key3: "value3", key4: "value4",
+
+        // }
+        // var stdDetails = [
+        //     {name: "varun", age: 20, gender: "male"},
+        //     {name: "sachin", age: 21, gender: "male"},
+        //     {name: "harshit", age: 22, gender: "male"},
+        //     {name: "priya", age: 23, gender: "female"},
+        // ]
+        //  var num = stdDetails.push({name: "vivek", age: 23, gender: "male" });
+        // console.log(num);
+        // console.log(stdDetails);
+        // //Pop - removes the last element from an array and returns that element.
+        // var num1 = stdDetails.pop();
+        // console.log(num1);
+        // console.log(stdDetails);
+        // var num = stdDetails.unshift({name: "vivek", age: 23, gender: "male" });
+        // console.log(num1);
+        // console.log(stdDetails);
+        // var num1 = stdDetails.shift();
+        // console.log(num1);
+        // console.log(stdDetails);
+        // console.log('splice',stdDetails.splice(1,2));
+        // console.log(stdDetails);
+
+        var arr = [
+            {name: "varun", age: 20, gender: "male"},
+            {name: "sachin", age: 21, gender: "male"},
+            {name: "harshita", age: 22, gender: "male"},
+            {name: "priya", age: 23, gender: "female"},
+        ]
+        // arr.forEach((data)=>{
+        //     console.log("name:-",data.name,'age:-',data.age,'gender:-',data.gender);
+        // });
+       
+
+        //Map
+        // var obj2=arr.map((data)=>{
+        //     return {...data,age:data.age+1}
+        // });
+        // console.log(obj2);
+
+        var filt=arr.filter((data)=>data.age>21);
+        console.log(filt);
+
+        //reduce
+
+        var arr1=[1,2,3,4,5,6,7,8,9,10];
+        console.log(arr1.reduce((acc,cv)=>acc+cv));
+
+
+
+
+    </script>
+</html>

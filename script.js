@@ -1,6 +1,10 @@
 function alertButton(){
-    alert("Hello Your Name is >>>")
+    alert(random());
+    function random(){
+    console.log("djd");
 }
+}
+
 function promtButton(){
     prompt("Enter Your Name...")
 }

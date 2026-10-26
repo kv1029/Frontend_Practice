@@ -19,5 +19,60 @@
     <button onclick="alertButton()">Alert</button>
     <button onclick="promtButton()">Prompt</button>
 </body>
+<script>
+    // function funscope(){
+    //     var num=10;
+    //     const num1=20;
+    //     let num2=30;
+    //     console.log("var",num);
+    //     console.log("const",num1);
+    //     console.log("let",num2);
+    // }
+    // if (true) {
+    //     var num=10;
+    //     const num1=20;
+    //     let num2=30;
+    //     console.log("var",num);
+    //     console.log("const",num1);
+    //     console.log("let",num2);
+    // }
+
+    function outvar(){
+        var num=10;
+        const num1=20;
+        let num2=30;
+        function invar(){
+            var inp=50;
+       
+            console.log("var",num);
+            console.log("const",num1);
+            console.log("let",num2);
+        }
+        invar();
+        console.log(inp);
+    }
+    // outvar();
+    function counterout(){
+        var count=0;
+        function inc(){
+            console.log(++count);
+
+        }
+        return inc;
+    }
+    var increement=counterout();
+    increement();
+    increement();
+    increement();
+    (function displayDetails(name,age){
+        console.log({name:name,
+        age:age});
+    })("Kv",30);
+
+
+
+
+</script>
 
 </html>
+
