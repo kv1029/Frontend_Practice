@@ -65,7 +65,29 @@
         var arr1=[1,2,3,4,5,6,7,8,9,10];
         console.log(arr1.reduce((acc,cv)=>acc+cv));
 
-
+        //Method Chaining
+        // arr.map().filter().reduce();
+        try{
+            var a=n;
+            const n=10;
+        }
+        catch(e){
+            console.error('error',e.message);
+        }
+        finally{
+            console.log('Done');
+        }
+        function ageCheck(age){
+            try{
+                if (age<18){
+                    throw new Error("Bada Ho ja Phele");
+                }console.log("eligble");
+            }
+            
+            catch(e){
+                    console.error(e.message)
+                }
+        }
 
 
     </script>

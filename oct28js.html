@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="n1">
+    <input type="text" id="n2">
+    <button type="submit" id="sub"></button>
+    <button type="reset"></button>
+    <h3 id="result"></h3>
+
+    <h1 id="heading">My Name</h1>
+    <p class="content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi tenetur tempore esse dolorem
+        iure qui, itaque reiciendis libero deleniti. Quis ullam cum suscipit sint officiis corrupti consectetur rerum
+        iste amet?Lorem ipsum dolor sit amloremet consectetur adipisicing elit. Mollitia nihil, iusto minima tenetur numquam,
+        hic animi repudiandae quo modi, praesentium eius iste. At reiciendis illum non, labore aliquam esse nisi?Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Error accusamus totam, temporibus ipsam deleniti labore
+        eveniet reiciendis commodi quae assumenda laudantium exercitationem ex ad, optio quis sit? Nihil, cum nostrum.
+
+    </p>
+    <p class="content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi tenetur tempore esse dolorem
+        iure qui, itaque reiciendis libero deleniti. Quis ullam cum suscipit sint officiis corrupti consectetur rerum
+        iste amet?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione reiciendis, minima ex deserunt qui
+        impedit, dolorum, voluptate cum hic voluptatem accusamus odio? Libero odio dolores neque alias et itaque fugit.
+
+    </p>
+    <p class="content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi tenetur tempore esse dolorem
+        iure qui, itaque reiciendis libero deleniti. Quis ullam cum suscipit sint officiis corrupti consectetur rerum
+        iste amet?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione reiciendis, minima ex deserunt qui
+        impedit, dolorum, voluptate cum hic voluptatem accusamus odio? Libero odio dolores neque alias et itaque fugit.
+
+    </p>
+    <ol id="list">
+        <li>ddjdjjd</li>
+        <li>ddjdjjd</li>
+        <li>ddjdjjd</li>
+        <li>ddjdjjd</li>
+        <li>ddjdjjd</li>
+    </ol>
+    <a href="#main">Teri </a>
+</body>
+<script>
+    // var num1 = document.getElementById('n1');
+    // var num2 = document.getElementById('n2');
+    // var btn = document.getElementById('sub');
+
+    // btn.onclick = function () {
+    //     var a = Number(num1.value);
+    //     var b = Number(num2.value);
+
+    //     var sum = a + b;
+
+    //     document.getElementById('result').innerText = sum;
+    // };
+    var h1id = document.getElementById('heading');
+    var pclass = document.getElementsByClassName('content');
+    console.log(pclass);
+    // Query Selector=>css selector pass
+    var p=document.querySelector('.content'); //retturn first single elemnt it matching 
+    var p1=document.querySelectorAll('.content'); //retturn all  elemnt it matching 
+    console.log(p,p1);
+
+    //inner Html   
+
+    console.log(h1id.innerText);
+    // h1id.innerHTML='<i>KV</i>';
+    // h1id.innerText='<i>KV</i>';
+    console.log(h1id.textContent);
+    h1id.innerHTML+="<i> is KV GUPTA</i>";
+
+    //modifying styles
+    h1id.style.color='red';
+
+    h1id.style.backgroundColor='black';
+    // element.getAttribute(attribute_name);
+    var href= document.querySelector('a').getAttribute('href');
+    var href= document.querySelector('a').setAttribute('href','https://www.google.com/?zx=1793181526469');
+    console.log(href);
+    
+    
+
+</script>
+
+</html>
