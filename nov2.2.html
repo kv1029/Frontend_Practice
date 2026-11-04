@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>Todo List</title> 
+        
+    </head>
+    <body>
+        <h1>Todo List</h1>
+        <form>
+            <input type="text" id="task" name="task" placeholder="Enter Your Task" required>
+            <button type="submit">Add Task</button>
+        </form>
+        <section id="taskCont"></section>
+    </body>
+    <script>
+        var form = document.querySelector("form");
+        var task = document.querySelector("#task");
+        var taskContainer  = document.querySelector("#taskCont");
+        var taskList = [];
+        var updateIndex = null;
+
+        function addEle(){
+            taskContainer.innerHTML = "";
+            taskList.forEach((data, index)=>{
+                taskContainer.innerHTML += `<p> ${data} </p> <button onclick="removeEle(${index})">Delete</button><button onclick="updateEle(${index})">Edit</button>`;
+            });
+
+        }
+        function updateEle(index){
+            task.value = taskList[index];
+            form.querySelector("button").innerHTML = "Update Task";
+            updateIndex = index;
+        }
+        function removeEle(index){
+            taskList=taskList.filter((data, i) => i !== index);
+            addEle();
+        }
+
+        form.addEventListener("submit", (e)=>{
+            e.preventDefault();
+            if (updateIndex !== null) {
+                taskList[updateIndex] = task.value;
+                updateIndex = null;
+            } else {
+                taskList.push(task.value);
+                form.querySelector("button").innerHTML="Add Task";
+                updateIndex=null;
+            }
+            task.value = "";
+            addEle();
+        });
+    </script>
+    </html>

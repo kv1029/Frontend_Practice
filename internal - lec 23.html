@@ -1,31 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        button{
+        button {
             background-color: blue;
             color: white;
         }
     </style>
 </head>
+
 <body>
-    <button onclick="alertButton()">ALert</button>
-    <button onclick="promptButton()">Prompt</button>
+    <button id="alert">ALert</button>
+    <button id="prompt">Prompt</button>
 </body>
 <script>
-    function alertButton(){
+    function alertButton() {
         alert("Hello Your Name...");
     }
-    function promptButton(){
+
+    function promptButton() {
         prompt("Enter your Name...");
     }
-    var btn1=document.querySelectorAll('button');
+
+    var btn1 = document.querySelectorAll('button');
+
     console.log(btn1);
-    btn1[0].innerHTML="This is the Alert Button";
-    btn1[1].innerHTML="This is the promt Button";
+
+    btn1[0].innerHTML = "This is the Alert Button";
+    btn1[1].innerHTML = "This is the Prompt Button";
+
+    const aButton = document.getElementById('alert');
+    const bButton = document.getElementById('prompt');
+
+    console.log(aButton);
+    console.log(bButton);
+
+    aButton.addEventListener('click', alertButton);
+    bButton.addEventListener('click', promptButton);
     
+
+
 </script>
+
 </html>
